@@ -1,0 +1,25 @@
+{
+    "name": "timitao/behatArchitectureExamples",
+    "description": "Examples of use interfaces in behat to inject functionality",
+    "minimum-stability": "dev",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Tomasz Kunicki",
+            "email": "kunicki.tomasz@gmail.com"
+        }
+    ],
+    "require": {
+        "behat/behat": "v3.0.15@stable"
+    },
+    "require-dev": {
+        "symfony/process": "~2.1",
+        "phpunit/phpunit": "4.3.*"
+    },
+    "config": {
+        "bin-dir": "bin/"
+    },
+    "autoload": {
+        "psr-4": {"": "src/"}
+    }
+}

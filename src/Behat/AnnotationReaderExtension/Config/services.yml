@@ -1,0 +1,10 @@
+parameters:
+  context.annotation_reader.example_annotation_reader.class: Behat\AnnotationReaderExtension\Context\Annotation\ExampleAnnotationReader
+
+services:
+  context.annotation_reader.example_annotation_reader:
+    class: "%context.annotation_reader.example_annotation_reader.class%"
+    arguments:
+      - "%paths.base%"
+    tags:
+      -  { name: context.annotation_reader }

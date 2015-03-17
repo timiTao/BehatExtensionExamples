@@ -1,0 +1,8 @@
+parameters:
+  context.class_resolver.example_class_resolver.class: Behat\ClassResolverExtension\Context\ContextClass\ExampleClassResolver
+
+services:
+  context.class_resolver.example_class_resolver:
+    class: "%context.class_resolver.example_class_resolver.class%"
+    tags:
+      -  { name: context.class_resolver }

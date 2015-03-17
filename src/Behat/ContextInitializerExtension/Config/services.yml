@@ -1,0 +1,10 @@
+parameters:
+  context.initializer.example_context_initializer.class: Behat\ContextInitializerExtension\Context\Initializer\Initializer
+  context.initializer.example_context_initializer.text: "myInitializerText"
+
+services:
+  context.initializer.example_context_initializer:
+    class: "%context.initializer.example_context_initializer.class%"
+    arguments: [ "%context.initializer.example_context_initializer.text%" ]
+    tags:
+      -  { name: context.initializer }

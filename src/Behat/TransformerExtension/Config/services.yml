@@ -1,0 +1,8 @@
+parameters:
+  transformation.argument_transformer.example_transformer.class: Behat\TransformerExtension\Transformer\ExampleTransformer
+
+services:
+  transformation.argument_transformer.example_transformer:
+    class: "%transformation.argument_transformer.example_transformer.class%"
+    tags:
+      -  { name: transformation.argument_transformer, priority: 100 }

@@ -1,0 +1,8 @@
+parameters:
+  context.argument_resolver.example_argument_resolver.class: Behat\ContextArgumentResolverExtension\Context\Argument\ExampleArgumentResolver
+
+services:
+  context.argument_resolver.example_argument_resolver:
+    class: "%context.argument_resolver.example_argument_resolver.class%"
+    tags:
+      -  { name: context.argument_resolver }

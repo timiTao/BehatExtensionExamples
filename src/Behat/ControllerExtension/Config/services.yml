@@ -1,0 +1,11 @@
+parameters:
+  cli.controller.example_controller.class:  Behat\ControllerExtension\Controller\ExampleController
+
+services:
+  cli.controller.example_controller:
+    class: "%cli.controller.example_controller.class%"
+    arguments:
+      - "@event_dispatcher"
+      - "%paths.base%"
+    tags:
+      -  { name: cli.controller, priority: 200 }
